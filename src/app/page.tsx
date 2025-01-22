@@ -11,7 +11,10 @@ const page = () => {
       
       <div className="text-red-600 font-felix text-3xl lg:text-5xl flex-grow border-0 border-white col-span-4 mt-6">COSMIC PROPHECIES</div>
       <div className="border-0 border-white col-span-2 flex justify-end">
-        <button className='w-64 h-12 lg:h-16 bg-[#D0D803] rounded-full text-xl xl:text-2xl font-consolas hover:bg-[#F6FF07] hover:underline'>Book a Session</button>
+      <button className='w-64 h-12 lg:h-16 bg-[#D0D803] rounded-full text-xl xl:text-2xl font-consolas hover:bg-[#F6FF07] hover:underline shadow-lg shadow-[#F6FF07]/50 transition-all'>
+        Book a Session
+      </button>
+
       </div>
       
       <div className=' bg-white h-[1px] col-span-6'></div>
