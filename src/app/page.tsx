@@ -1,101 +1,44 @@
-import Image from "next/image";
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <div className="bg-black py-12 px-16 xl:px-28 bg-[url('/spacefooter.jpg')]">
+      <div className="gap-x-5 items-center grid grid-cols-7">
+        <div className='border-0 border-white row-span-2 items-center flex justify-center'>
+        <img src='logo.png' className='lg:h-28 h-24 lg:w-28 w-24'/>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      
+      <div className="text-red-600 font-felix text-3xl lg:text-5xl flex-grow border-0 border-white col-span-4 mt-6">COSMIC PROPHECIES</div>
+      <div className="border-0 border-white col-span-2 flex justify-end">
+        <button className='w-64 h-12 lg:h-16 bg-[#D0D803] rounded-full text-xl xl:text-2xl font-consolas hover:bg-[#F6FF07] hover:underline'>Book a Session</button>
+      </div>
+      
+      <div className=' bg-white h-[1px] col-span-6'></div>
+      </div>
+      <div className="grid grid-cols-7 justify-center gap-11 pl-32 lg:pl-40 xl:pl-48">
+        <div className="flex justify-start gap-4 lg:gap-9 text-white col-span-5 text-sm lg:text-base">
+          <div className="hover:text-[#F6FF07] hover:underline hover:underline-offset-[20px] hover:decoration-red-500 hover:cursor-pointer ">Prophecies</div>
+          <div className="hover:text-[#F6FF07] hover:underline hover:underline-offset-[20px] hover:decoration-red-500 hover:cursor-pointer">Services</div>
+          <div className="hover:text-[#F6FF07] hover:underline hover:underline-offset-[20px] hover:decoration-red-500 hover:cursor-pointer">Store</div>
+          <div className="hover:text-[#F6FF07] hover:underline hover:underline-offset-[20px] hover:decoration-red-500 hover:cursor-pointer">Blogs</div>
+          <div className="hover:text-[#F6FF07] hover:underline hover:underline-offset-[20px] hover:decoration-red-500 hover:cursor-pointer">About us</div>
+          <div className="hover:text-[#F6FF07] hover:underline hover:underline-offset-[20px] hover:decoration-red-500 hover:cursor-pointer">Contacts</div>
+        </div>
+        <div className="flex justify-center ml-5 gap-6 text-white col-span-2 ">
+        <i className="ri-facebook-fill hover:text-red-500 hover:border-2 hover:border-white rounded-full"></i>
+        <i className="ri-instagram-fill hover:text-red-500 hover:border-2 hover:border-white rounded-full"></i>
+        <i className="ri-youtube-fill hover:text-red-500 hover:border-2 hover:border-white rounded-full"></i>
+        <i className="ri-twitter-x-fill hover:text-red-500 hover:border-2 hover:border-white rounded-full"></i>
+
+        </div>
+      </div>
+      
+      
+     </div>
     </div>
-  );
+    
+  )
 }
+
+export default page
