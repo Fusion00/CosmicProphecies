@@ -46,7 +46,7 @@ const Navbar2 = () => {
                 </div>
             </div>
             <div
-                className="h-4 lg:h-8 w-full bg-black -mt-1 bg-[url('/spacefooter.jpg')]"
+                className="absolute h-4 lg:h-8 w-full bg-black -mt-1 bg-[url('/spacefooter.jpg')]"
                 style={{
                 clipPath:
                     'polygon(2% 47%, 5% 75%, 16% 118%, 29% 63%, 32% 45%, 38% 33%, 54% 50%, 57% 51%, 70% 26%, 88% 21%, 99% 60%, 120% 5%, 0% 5%)',
@@ -56,7 +56,7 @@ const Navbar2 = () => {
 
             {/*---------menu list----------*/}
             {isMenuOpen && (
-                <div className="fixed top-0 right-0 h-full w-56 bg-black px-6 py-4">
+                <div className="fixed top-0 right-0 z-40 h-full w-56 bg-black px-6 py-4">
                     <div className="flex justify-end">
                         {/* Menu Button - 2 */}
                         <button
