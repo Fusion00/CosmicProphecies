@@ -10,6 +10,9 @@ export default {
     extend: {
       screens: {
         'xl-custom': '1120px', // Custom breakpoint for 1120px
+        'mob-sm': '320px',
+        'mob-md': '375px',
+        'mob-lg': '425px'
       },
       fontFamily: {
         felix: ['"Felix Titling"', 'serif'], // Add the font name here
